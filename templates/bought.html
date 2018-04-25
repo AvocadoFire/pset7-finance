@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Bought
+{% endblock %}
+
+{% block main %}
+    <header>
+        <p>You bought {{ symbol }} at {{ price|usd }} per stock which is worth {{ value_of_holding|usd }}</p>
+        <p>You now have {{ cash|usd }} left to spend</p>
+    </header>
+{% endblock %}
